@@ -11732,3 +11732,76 @@ html {
     left: -2vw;
   }
 }
+
+/* Valerie customizations */
+:root {
+  --bs-primary: #3556c8;
+  --bs-secondary: #61c7d8;
+  --bs-primary-rgb: 53, 86, 200;
+  --bs-secondary-rgb: 97, 199, 216;
+  --bs-link-color: #3556c8;
+  --bs-link-hover-color: #2744aa;
+}
+
+body {
+  background-color: #f8fbff;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #2848b6 0%, #60c3d7 50%, #a17bff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(135deg, #2848b6 0%, #60c3d7 50%, #a17bff 100%);
+}
+
+.profile {
+  width: 37rem;
+  height: 37rem;
+  border-radius: 5rem;
+  position: relative;
+  display: grid;
+  place-items: end center;
+  overflow: hidden;
+}
+
+.profile-img {
+  max-height: 110%;
+  width: auto;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.resume-card ul li {
+  margin-bottom: 0.65rem;
+}
+
+.chip-box {
+  background: #f3f7ff;
+  color: #35506f;
+  padding: 1rem 1.15rem;
+  border-radius: 1rem;
+  border: 1px solid #dce6fb;
+  height: 100%;
+}
+
+.feature {
+  width: 3rem;
+  height: 3rem;
+  display: inline-grid;
+  place-items: center;
+  font-size: 1.3rem;
+}
+
+.navbar {
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 991.98px) {
+  .profile {
+    width: 26rem;
+    height: 26rem;
+  }
+}
